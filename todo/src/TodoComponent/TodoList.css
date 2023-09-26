@@ -1,0 +1,35 @@
+/* TodoList.css */
+
+.todo-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.todo-table th,
+.todo-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+.todo-table th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+.delete-button,
+.edit-button,
+.complete-button {
+  background-color: #ff5733;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.edit-button {
+  background-color: #3498db;
+  margin-left: 10px;
+}
