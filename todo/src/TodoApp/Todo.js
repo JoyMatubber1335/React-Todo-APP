@@ -9,6 +9,7 @@ export const Todo = ({ todo, setEdit }) => {
       <br></br>
       <span>{todo.description}</span>
       <button onClick={() => setEdit(todo)}> Edit</button>
+      {/* <button onClick={() => setDelete(todo)}> Delete</button> */}
     </div>
   );
 };
