@@ -28,7 +28,12 @@ const reducer = (todos, action) => {
         return todo;
       });
     case ACTIONS.EDIT_TODO:
-
+      return todos.map((todo) => {
+        if (todo.id === action.payload.id) {
+          console.log(todo.id);
+        }
+        return todo;
+      });
     default:
       return todos;
   }

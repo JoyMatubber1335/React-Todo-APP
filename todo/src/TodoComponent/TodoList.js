@@ -33,7 +33,12 @@ export const TodoList = ({ todo, dispatch }) => {
               </button>
             </td>
             <td>
-              <button className="edit-button">Edit</button>
+              <button
+                className="edit-button"
+                onClick={() => dispatch({ type: ACTIONS.EDIT_TODO, payload: { id: todo.id } })}
+              >
+                Edit
+              </button>
             </td>
             <td>
               <button
